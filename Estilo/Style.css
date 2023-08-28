@@ -1,0 +1,236 @@
+header{
+    height: 30rem;
+}
+header img{
+    height: 30rem;
+    object-fit: cover;
+}
+h1{
+    text-align: center;
+    margin-left: 15rem; 
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+nav img{
+    width: 10rem;
+}
+
+section {
+    display: flex;
+    padding: 3rem;
+    gap: 4rem;
+    margin-left: 1rem;
+    height: 28.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.btn-primary {
+    align-self: flex-end; 
+    padding: 3px 5px; 
+    font-size: 14px;
+    margin-bottom: 1rem; 
+}
+
+.card-footer-text {
+    margin-top: auto;
+}
+
+footer {
+    height: 4rem;
+    background-color: rgba(128, 128, 128, 0.077);
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    gap: 5rem; 
+}
+
+footer img {
+    height: 2rem;
+}
+footer h4 {
+    margin-left: auto; 
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28.2rem;
+    margin-left: auto
+}
+
+.contacto{
+    width: 50%;
+}
+
+.form2 {
+    width: 100%
+}
+
+.formulario textarea {
+    height: 100px;
+}
+
+.formulario button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 54rem;
+}
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -12rem;
+    margin-top: 1rem;  
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 13rem
+}
+.image-with-text {
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.image-with-text img{
+    height: 20rem;
+    margin-top: 3rem;
+}
+.Details{
+    background-color: rgba(128, 128, 128, 0.225);
+    height: 35rem;
+    margin-top: 10rem;
+    width: 80rem;
+    margin-bottom: 18rem;
+    margin-left: 20rem;
+}
+
+@media (min-width: 1044px){
+    .card-body {
+        height: 25rem;
+    }
+    .card{
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+    section{
+        height: 39rem;
+    }
+    .formulario button{
+        margin-left: 39rem;
+    }
+    .Details{
+        margin-left: 4rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .check {
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+        section {
+            display: flex;
+            flex-direction: column;
+            padding: 3rem;
+            gap: 4rem;
+            margin-left: 1rem;
+            height: 220rem;
+            align-items: center;
+            justify-content: center;
+        }       
+        .Details{
+            height: 50rem;
+            margin-left: 4rem;
+            width: 40rem;
+            align-content: center;
+            justify-content: center;
+        }
+        .image-with-text{
+            flex-direction: column;
+        }
+}
+@media (min-width: 390px) and (max-width: 767px){
+    .check {
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+        section {
+            display: flex;
+            flex-direction: column;
+            padding: 3rem;
+            gap: 4rem;
+            margin-left: 1rem;
+            height: 220rem;
+            align-items: center;
+            justify-content: center;
+        }       
+        footer{
+            height: 11rem;
+            background-color: rgba(128, 128, 128, 0.077);
+            width: 100%;
+            flex-direction: column;
+            display: flex;
+            align-items: center; 
+            gap: 1rem; 
+        }
+        footer h4 {
+            margin-left: 0rem;}
+            .Details{
+                height: 55rem;
+                margin-left: 1rem;
+                width: 22rem;
+                align-content: center;
+                justify-content: center;
+            }
+            .image-with-text{
+                flex-direction: column;
+            }
+            .image-with-text img{
+                width: 20rem;
+                
+            }
+}
