@@ -258,14 +258,15 @@ table th, table td {
             flex-direction: column;
         }
         nav{ 
-            width: 36.5rem
+            width: 48rem
         }
         header{
-            width: 36.5rem;
+            width: 48rem;
         }
         .check{
             justify-content: center;
             margin-left: 13rem;
+        
         }
         footer{
             height: 11rem;
