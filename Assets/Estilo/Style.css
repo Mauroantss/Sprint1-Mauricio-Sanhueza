@@ -5,6 +5,9 @@ body{
 header{
     height: 20rem;
 }
+footer.details{
+    margin-top: 51rem;
+}
 main{
     margin-top: 1rem;
    
@@ -33,19 +36,16 @@ nav img{
     width: 10rem;
 }
 
-section {
-    display: flex;
-    gap: 4rem;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 80rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
+#contenedorCards {
+  display:flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-around;
+  align-items: stretch;
+ 
 }
 
 .card-body {
-    height: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -71,7 +71,12 @@ section {
     margin-top: auto;
 }
 
+.Sect{
+    height: auto;
+}
+
 footer {
+    margin-top: 10rem;
     height: 4rem;
     background-color:#967E76;
     width: 100%;
@@ -142,21 +147,22 @@ table th, table td {
 .image-with-text {
     display: flex;
     align-items: center;
-    padding: 5rem;
+    padding: 5rem;  
     gap: 4rem;
     justify-content: center;
 }
+
 
 .image-with-text img{
     height: 20rem;
     margin-top: 3rem;
 }
-.Details{
-    background-color: rgba(128, 128, 128, 0.225);
-    height: 35rem;
-    margin-top: 10rem;
+#contenedorDetails{
+    background-color: rgba(128, 128, 128, 0.466);
+    height: 55rem;
+    margin-top: 5rem;
     width: 80rem;
-    margin-bottom: 18rem;
+    margin-bottom: 5rem;
     
   
 }
@@ -170,7 +176,7 @@ table th, table td {
         margin-top: 3rem;
     }
     section{
-        height: 280rem;
+        /* height: 280rem; */
         margin-bottom: 3rem;
     }
     .formulario button{
@@ -200,10 +206,8 @@ table th, table td {
         section {
             display: flex;
             flex-direction: row;
-            padding: 3rem;
             gap: 4rem;
             margin-left: 1rem;
-            height: 400rem;
             width: 48rem;
             align-items: center;
             justify-content: center;
@@ -241,7 +245,6 @@ table th, table td {
             flex-direction: row;
             padding: 3rem;
             gap: 4rem;
-            height: 400rem;
             width: 48rem;
         }       
         .Details{
