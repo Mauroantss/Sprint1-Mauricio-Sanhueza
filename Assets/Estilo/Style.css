@@ -141,8 +141,8 @@ table th, table td {
 .table {
     display: flex;
     justify-content: center;
-    padding: 7rem;
-    margin-bottom: 13rem
+    margin-top: 2rem;
+   
 }
 .image-with-text {
     display: flex;
@@ -266,7 +266,7 @@ table th, table td {
         .check{
             justify-content: center;
             margin-left: 13rem;
-        
+    
         }
         footer{
             height: 11rem;

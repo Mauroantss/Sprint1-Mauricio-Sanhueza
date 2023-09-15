@@ -1,31 +1,25 @@
-let parametro = location.search
-
-let params = new URLSearchParams(parametro)
-
-let idEvento = params.get("parametro")
-
-let evento = data.events.find(evento => evento._id === idEvento)
+// Código Details
+import { crearTarjeta } from "./Modules/Funciones.js";
 
 
-let contenedorDetails = document.getElementById("contenedorDetails")
+const api = "https://mindhub-xj03.onrender.com/api/amazing";
+
+let parametro = location.search;
+let params = new URLSearchParams(parametro);
+let idEvento = params.get("parametro");
+
+fetch(api)
+  .then(response => response.json())
+  .then(({ events }) => {
+    let evento = events.find(evento => String(evento._id) === String(idEvento)); // Convertir a String para comparar
+    if (evento) {
+      let contenedorDetails = document.getElementById("contenedorDetails");
+      contenedorDetails.innerHTML = crearTarjeta(evento);
+    } else {
+      console.log("Evento no encontrado")
+    }
+  })
+  .catch(err => console.log(`Error: ${err}`));
 
 
-function crearDetails(formaCard){
-    contenedorDetails.innerHTML +=
- `
- <article class="card col-12 col-md-12 col-xl-6 mx-auto">
- <h2 class="card-title text-center mt-3">${evento.name}</h2>
- <div class="card-body d-flex gap-3 flex-column text-center">
-   <img class="card-img-top" src="${evento.image}" alt="${evento.image}">
-   <p>Date: ${evento.date}</p>
-   <p>Description: ${evento.description}</p>
-   <p>Category: ${evento.category}</p>
-   <p>Place: ${evento.place}</p>
-   <p>Capacity: ${evento.capacity}</p>
-   <p>Price: $${evento.price}</p>
- </div>
-</article>
-
-`
-}
-crearDetails()
+ 
