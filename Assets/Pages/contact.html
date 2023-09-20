@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+  <div id="app">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <img src="/Assets/Imagenes/amazing_brand.png" alt="">
@@ -93,29 +93,32 @@
   <article>
     <h1>Contact Us!</h1>  
   </article>
- <main class="formulario">
-    <form class="contacto" >
-        <label class="form2" for="name">Name:</label>
-        <input class="form2" type="text" id="name" name="name" required>
-        
-        <label class="form2" for="email">Email:</label>
-        <input class="form2" type="email" id="email" name="email" required>
-        
-        <label class="form2" for="message">Message:</label>
-        <textarea class="form2" id="message" name="message" required></textarea>
-        
-        <button type="submit">Submit</button>
+  <main class="formulario">
+    <form class="contacto">
+      <label class="form2" for="name">Name:</label>
+      <input class="form2" type="text" id="name" v-model="name" required>
+      
+      <label class="form2" for="email">Email:</label>
+      <input class="form2" type="email" id="email" v-model="email" required>
+      
+      <label class="form2" for="message">Message:</label>
+      <textarea class="form2" id="message" v-model="message" required></textarea>
+      
+      <button type="submit" class="btn btn-primary mt-1  float-right">Submit</button>
     </form>
- </main>
+  </main>
+  
   <footer>
     <a href=""><img src="/Assets/Imagenes/instagram.png" alt="Logoinstagram"></a>
     <a href=""><img src="/Assets/Imagenes/whatsapp.png" alt="Logowhatsapp"></a>
     <a href=""><img src="/Assets/Imagenes/facebook.png" alt="Logofacebook"></a>
     <h4>Cohord 51</h4>
   </footer>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+    <script src="../Estilo/Vue/contactvue.js" ></script>
 </body>
 
 </html>

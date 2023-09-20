@@ -1,5 +1,4 @@
-// Código Details
-import { crearTarjeta } from "./Modules/Funciones.js";
+
 
 
 const api = "https://mindhub-xj03.onrender.com/api/amazing";
@@ -22,4 +21,20 @@ fetch(api)
   .catch(err => console.log(`Error: ${err}`));
 
 
- 
+  function crearTarjeta(tarjeta) {
+    return `
+      <div class="card w-100" style="width: 18rem;">
+        <img src="${tarjeta.image}" class="card-img-top img-fluid" alt="${tarjeta.name}">
+        <div class="card-body text-center">
+          <h5 class="card-title">${tarjeta.name}</h5>
+          <p class="card-text"><strong>Description:</strong> ${tarjeta.description}</p>
+          <p class="card-footer-text"><strong>Price:</strong> $${tarjeta.price}</p>
+          <p class="card-footer-text"><strong>Place:</strong> ${tarjeta.place}</p>
+          <p class="card-footer-text"><strong>Date:</strong> ${new Date(tarjeta.date).toLocaleDateString()}</p>
+          <p class="card-footer-text"><strong>Category:</strong> ${tarjeta.category}</p>
+        </div>
+      </div>
+    `;
+  }
+  
+  
